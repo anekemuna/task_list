@@ -36,7 +36,7 @@ export const Task = ({ task, fetchTasks }) => {
   };
 
   return (
-    <div>
+    <div className="task">
       <div
         className={classnames("flex", {
           done: isComplete,
