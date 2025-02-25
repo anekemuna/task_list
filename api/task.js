@@ -33,7 +33,7 @@ export const createTasks = async ({ name, completed }) => {
   return response;
 };
 
-export const updateTasks = async ([id, name, completed]) => {
+export const updateTasks = async ({id, name, completed}) => {
   const command = new UpdateCommand({
     TableName: "Tasks",
     Key: { id },
