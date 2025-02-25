@@ -1,4 +1,4 @@
-import { Button, Dialog, TextField } from "@mui/material";
+import { Button, Dialog, DialogTitle, TextField } from "@mui/material";
 import React, { useState } from "react";
 import CheckIcon from "@mui/icons-material/Check";
 import axios from "axios";
@@ -29,7 +29,9 @@ export const UpdateTaskForm = ({
   };
 
   return (
-    <Dialog open={isDialogOpen} onClose={() => setIsDialogOpen(false)}>
+    // <Dialog open={isDialogOpen} onClose={() => setIsDialogOpen(false)}>
+    <Dialog open={isDialogOpen}>
+      <DialogTitle>Edit Task</DialogTitle>
       <div className="dialog">
         <TextField
           size="small"

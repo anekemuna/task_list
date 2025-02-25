@@ -20,7 +20,7 @@ export default function App() {
       const { data } = await axios.get(API_URL); // make a GET request to the /task route
       setTasks(data); // set the state of task to the response data
     } catch (error) {
-      console.error(`App: Error fetching tasks: ${error}`); // log an error message if the fetch fails
+      console.log(`App: Error fetching tasks: ${error}`); // log an error message if the fetch fails
     }
   };
 

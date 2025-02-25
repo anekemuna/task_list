@@ -37,7 +37,7 @@ app.post("/task", async (req, res) => {
   }
 });
 
-app.put("/task/:id", async (req, res) => {
+app.put("/task", async (req, res) => {
   // update a task
   try {
     const task = req.body;
