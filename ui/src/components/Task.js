@@ -9,8 +9,8 @@ import { API_URL } from "../utils";
 
 export const Task = ({ task, fetchTasks }) => {
   const { id, name, completed } = task;
-  const { isComplete, setIsComplete } = useState(completed);
-  const { isDialogOpen, setIsDialogOpen } = useState(false);
+  const [ isComplete, setIsComplete ] = useState(completed);
+  const [ isDialogOpen, setIsDialogOpen ] = useState(false);
 
   const handleUpdateTaskCompletion = async () => {
     try {
