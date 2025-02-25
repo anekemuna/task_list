@@ -29,7 +29,6 @@ export const UpdateTaskForm = ({
   };
 
   return (
-    // <Dialog open={isDialogOpen} onClose={() => setIsDialogOpen(false)}>
     <Dialog open={isDialogOpen}>
       <DialogTitle>Edit Task</DialogTitle>
       <div className="dialog">
